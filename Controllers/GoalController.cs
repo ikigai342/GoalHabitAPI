@@ -41,7 +41,7 @@ namespace GoalHabitAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<Goal>> UpdateGoal(Guid id, GoalDto request)
+        public async Task<ActionResult<Goal>> UpdateGoal(Guid id, GoalSelectedDto request)
         {
             var result = await _goalService.UpdateGoal(id, request);
 

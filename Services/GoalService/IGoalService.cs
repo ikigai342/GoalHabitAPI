@@ -8,7 +8,7 @@ namespace GoalHabitAPI.Services.GoalService
         Task<List<GoalMainDto>> GetUserGoals();
         Task<GoalSelectedDto> GetGoal(Guid id);
         Task<List<Goal>> AddGoal(GoalAddDto goal);
-        Task<Goal> UpdateGoal(Guid id, GoalDto request);
+        Task<GoalSelectedDto> UpdateGoal(Guid id, GoalSelectedDto request);
         Task<List<Goal>> DeleteGoal(Guid id);
     }
 }
